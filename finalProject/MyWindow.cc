@@ -23,16 +23,16 @@ MyWindow::MyWindow(int width, int height)
 	_houseHeight = 1.;
 }
 
-static const float s_material_walls[4]   { 0.5f, 0.4f, 0.2f, 1.f };
+static const float s_material_walls[4]   { 0.2f, 0.2f, 0.4f, 1.f };
 static const float s_material_floor[4]   { 0.2f, 0.2f, 0.2f, 1.f };
-static const float s_material_roof[4]    { 0.5f, 0.4f, 0.2f, 1.f };
+static const float s_material_roof[4]    { 0.7f, 0.6f, 0.2f, 1.f };
 
 void MyWindow::setup()
 {
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
-	glClearColor(0.15f, 0.15f, 0.4f, 1.0f);
+	glClearColor(0.69f, 0.53f, 0.69f, 1.0f);
 	glMatrixMode(GL_PROJECTION);
 	gluPerspective(45., double(width()) / double(height()), 0.01, 20.0);
 	glMatrixMode(GL_MODELVIEW);
